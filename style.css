@@ -14,14 +14,13 @@ License URI: https://github.com/nikhildevre/oviya/blob/main/LICENSE
 Text Domain: oviya
 Tags: blog, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the MIT license.
-Use it to create something amazing.
+Copyright (C) 2026 Apur Group (Nikhil Devre)
 
-WordPress theme "Oviya"; this codebase (all PHP templates, WordPress
-integration, and the compiled CSS/JS) is an independent WordPress port.
+This program is free software; you can redistribute it and/or modify it under the terms of the MIT License.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Inspired by and design concepts adapted from the Chirpy Jekyll theme by Cotes Chung (https://github.com/cotes2020/jekyll-theme-chirpy).
 
-All theme styles live in assets/css/oviya.css and are enqueued via functions.php;
-this file only carries the required theme header metadata.
+All theme styles live in assets/css/oviya.css and are enqueued via functions.php; this file only carries the required theme header metadata.
 */
