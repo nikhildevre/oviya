@@ -1,0 +1,27 @@
+/*
+Theme Name: Oviya
+Theme URI: https://github.com/nikhildevre/oviya
+Author: Nikhil Devre (Apur Group)
+Author URI: https://www.apurgroup.com
+Description: <p>A thoughtfully designed WordPress theme built for writers, developers, and independent creators who value clarity, performance, and a focused reading experience. It combines a clean, responsive design with essential tools for modern technical blogging, including light and dark modes, syntax-highlighted code blocks, table-of-contents navigation, related posts, hierarchical category browsing, and an integrated search sidebar.</p><br /><br /><p>Designed with simplicity and usability at its core, the theme provides a refined foundation for publishing technical articles, tutorials, documentation, and personal knowledge.</p>
+Copyright: (c) 2026 Apur Group
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+Version: 1.0.0
+License: MIT License
+License URI: https://github.com/nikhildevre/oviya/blob/main/LICENSE
+Text Domain: oviya
+Tags: blog, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the MIT license.
+Use it to create something amazing.
+
+WordPress theme "Oviya"; this codebase (all PHP templates, WordPress
+integration, and the compiled CSS/JS) is an independent WordPress port.
+
+Inspired by and design concepts adapted from the Chirpy Jekyll theme by Cotes Chung (https://github.com/cotes2020/jekyll-theme-chirpy).
+
+All theme styles live in assets/css/oviya.css and are enqueued via functions.php;
+this file only carries the required theme header metadata.
+*/

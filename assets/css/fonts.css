@@ -1,0 +1,50 @@
+/* --- LATO --- */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/lato-v25-latin_latin-ext/lato-v25-latin_latin-ext-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/lato-v25-latin_latin-ext/lato-v25-latin_latin-ext-regular.woff2') format('woff2');
+}
+
+
+/* --- SOURCE SANS 3 --- */
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/source-sans-3-v19-latin/source-sans-3-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/source-sans-3-v19-latin/source-sans-3-v19-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/source-sans-3-v19-latin/source-sans-3-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/source-sans-3-v19-latin/source-sans-3-v19-latin-900.woff2') format('woff2');
+}
