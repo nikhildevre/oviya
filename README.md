@@ -9,14 +9,35 @@
 Developed by **[Nikhil Devre](https://www.nikhildevre.com)** under **[Apur Group](https://www.apurgroup.com)** as a clean, production-ready publishing platform.
 
 ---
+<!-- 
+**[Live Demo](#) · [Download](#) · [Documentation](#)**
+--->
 
 ## 🚀 Key Features
 
-* **Dual Mode Architecture:** Seamless native light and dark mode support optimized for readability.
-* **Developer Focused:** Built-in syntax-highlighted code blocks for technical documentation and tutorials.
-* **Navigation & Discovery:** Integrated table-of-contents generation, related posts engine, and hierarchical category browsing.
-* **Performance First:** Lightweight design with compiled, minimal CSS/JS assets (no bloat).
-* **Responsive Layout:** Fluid two-column layout with a customizable right-sidebar and search integration.
+### Built for technical content
+
+- 💻 **Beautiful code blocks** — Designed for tutorials, documentation, and developer blogs.
+- 📑 **Table of contents** — Make long-form articles easier to navigate.
+- 🔗 **Related posts** — Help readers discover more of your content.
+- 🗂️ **Category navigation** — Organize technical content into clear sections.
+
+### Focused reading experience
+
+- 🌙 **Light & dark mode** — Comfortable reading in any environment.
+- 📖 **Distraction free layout** — Content-first two-column design with an optional sidebar.
+- 📱 **Responsive** — Designed for desktop, tablet, and mobile.
+- 🔎 **Integrated search** — Help readers find what they're looking for.
+
+### Lightweight by design
+
+- ⚡ Minimal CSS & JavaScript
+- 🧩 Clean, modular PHP templates
+- ♿ Semantic HTML and accessibility conscious markup
+- 🌍 Translation ready
+- 🔧 WordPress native architecture
+
+No visual builder required. No unnecessary framework. No theme bloat.
 
 ---
 
@@ -31,9 +52,67 @@ This theme is built following modern WordPress development standards:
 
 ## 📦 Installation
 
-1. Download the latest release zip from the [Releases page](https://github.com/nikhildevre/oviya/releases).
-2. Navigate to your WordPress Admin dashboard: **Appearance > Themes > Add New**.
-3. Upload the `oviya.zip` file, click **Install Now**, and then **Activate**.
+### Option 1 — Download a Release
+
+1. Download the latest `oviya.zip` from [Releases](../../releases).
+2. Open your WordPress dashboard.
+3. Go to **Appearance → Themes → Add New → Upload Theme**.
+4. Upload `oviya.zip`.
+5. Click **Install Now**.
+6. Activate Oviya.
+
+### Option 2 — Clone the Repository
+
+```
+git clone https://github.com/nikhildevre/oviya.git
+```
+Copy the theme into:
+
+```
+wp-content/themes/oviya
+```
+Then activate Oviya from the WordPress dashboard.
+
+---
+
+## 🛠️ Development
+
+Clone the repository:
+```
+git clone https://github.com/nikhildevre/oviya.git
+cd oviya
+```
+The theme follows a conventional WordPress PHP template structure with assets separated into the assets directory.
+
+See [CONTRIBUTING.md](https://github.com/nikhildevre/oviya/blob/main/CONTRIBUTING.md) for development and contribution guidelines.
+
+---
+## 🤝 Contributing
+
+Oviya is open source and contributions are welcome.
+
+You can help by:
+
+- 🐛 Reporting bugs
+- 💡 Suggesting improvements
+- 🎨 Improving styles or templates
+- ♿ Improving accessibility
+- 🌍 Adding translations
+- 📝 Improving documentation
+- 🔧 Submitting pull requests
+
+Please read [CONTRIBUTING.md](https://github.com/nikhildevre/oviya/blob/main/CONTRIBUTING.md) before submitting a contribution.
+
+---
+
+## 💬 Feedback
+Using Oviya on your website?
+
+I'd love to hear what you're building.
+
+- **Found a bug?** Open an issue
+- **Have an idea?** Start a discussion
+- **Built something with Oviya?** Share it with the community.
 
 ---
 
