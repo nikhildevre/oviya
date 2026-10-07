@@ -39,8 +39,34 @@ Developed by **[Nikhil Devre](https://www.nikhildevre.com)** under **[Apur Group
 
 No visual builder required. No unnecessary framework. No theme bloat.
 
+<!-- 
 ---
 
+## 👀 See Oviya in Action
+
+### Technical Blog
+
+![Oviya technical blog](screenshots/blog.png)
+
+A focused reading experience for tutorials, engineering articles, and long-form technical writing.
+
+### Dark Mode
+
+![Oviya dark mode](screenshots/dark-mode.png)
+
+Switch between light and dark modes for comfortable reading day or night.
+
+### Code-Heavy Articles
+
+![Oviya code blocks](screenshots/code-blocks.png)
+
+Syntax-highlighted code blocks make programming tutorials and documentation easy to follow.
+
+
+> **Tip:** Replace the screenshot paths above with the actual screenshots you add to the repository.
+-->
+
+---
 ## 🛠️ Technical Architecture & Stack
 
 This theme is built following modern WordPress development standards:
@@ -73,6 +99,24 @@ wp-content/themes/oviya
 ```
 Then activate Oviya from the WordPress dashboard.
 
+---
+
+## 💻 Code Syntax Highlighting
+
+Oviya includes built-in support for IDE-style code syntax highlighting using [Highlight.js](https://highlightjs.org/). 
+
+To add a code block in your blog posts:
+
+1. Use a standard code block or a **Custom HTML** block in the WordPress editor.
+2. Wrap your source code inside standard `<pre><code>` tags.
+
+```html
+<pre><code>
+// Your code goes here
+const greeting = "Hello, World!";
+console.log(greeting);
+</code></pre>
+```
 ---
 
 ## 🛠️ Development
