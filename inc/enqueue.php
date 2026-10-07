@@ -152,6 +152,29 @@ function oviya_enqueue_comments_reply() {
 }
 add_action( 'wp_enqueue_scripts', 'oviya_enqueue_comments_reply' );
 
+function oviya_add_auto_highlight_js() {
+    // Enqueue an IDE-style theme
+    wp_enqueue_style( 
+        'highlight-css', 
+        OVIYA_URI . '/assets/css/highlightjs/vs-dark.min.css', 
+        array(), 
+        '11.12.0' 
+    );
+
+    // Enqueue Highlight.js script
+    wp_enqueue_script( 
+        'highlight-js', 
+        OVIYA_URI . '/assets/js/highlightjs/highlight.min.js', 
+        array(), 
+        '11.12.0', 
+        true 
+    );
+
+    // Automatically find and highlight all code blocks on old and new posts
+    wp_add_inline_script( 'highlight-js', 'hljs.highlightAll();' );
+}
+add_action( 'wp_enqueue_scripts', 'oviya_add_auto_highlight_js' );
+
 function oviya_add_defer_attribute( $tag, $handle ) {
 	if ( 'defer' === wp_scripts()->get_data( $handle, 'strategy' ) ) {
 		if ( false === strpos( $tag, ' defer' ) ) {
