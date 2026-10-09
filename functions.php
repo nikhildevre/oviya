@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'OVIYA_VERSION', '1.0.2' );
+define( 'OVIYA_VERSION', '1.1.0' );
 define( 'OVIYA_DIR', get_template_directory() );
 define( 'OVIYA_URI', get_template_directory_uri() );
 
