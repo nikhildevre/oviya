@@ -284,11 +284,10 @@ function oviya_contact_links() {
 
 	$email = get_theme_mod( 'oviya_contact_email' );
 	if ( $email ) {
-		$parts   = explode( '@', $email );
 		$links[] = array(
 			'email',
 			'fas fa-envelope',
-			"javascript:void(location.href = 'mailto:' + ['{$parts[0]}','{$parts[1]}'].join('@'))",
+			'mailto:' . sanitize_email( $email ),
 		);
 	}
 
