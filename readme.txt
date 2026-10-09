@@ -32,3 +32,20 @@ Designed with simplicity and usability at its core, Oviya provides a refined fou
 
 = 1.0.0 =
 * Initial public release of the Oviya WordPress theme.
+
+== Resources ==
+
+* Font Awesome (Free Version) - https://fontawesome.com
+  License: SIL OFL 1.1 (Fonts) / MIT (Code) - https://fontawesome.com/license/free
+
+* Bootstrap Framework - https://getbootstrap.com
+  License: MIT License - https://github.com/twbs/bootstrap/blob/main/LICENSE
+
+* Theme Screenshot Images:
+  Self-created / Public Domain (CC0)
+
+== Privacy Note ==
+
+This theme optionally embeds Disqus comments when configured by the site admin.
+Disqus is a third-party service that may collect IP addresses and usage data.
+Disqus Privacy Policy: https://help.disqus.com/en/articles/1717103-disqus-privacy-policy
