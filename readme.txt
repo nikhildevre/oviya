@@ -37,7 +37,7 @@ Designed with simplicity and usability at its core, Oviya provides a refined fou
 = 1.0.2 =
 * Documentation update: Added theme details, metadata, and description
 = 1.1.0 =
-* New Feature: Added dark mode support with automatic system preference detection.
+* New Feature: Integrated highlightjs to automatically syntax-highlight code blocks in posts and pages.
 
 == Resources ==
 
