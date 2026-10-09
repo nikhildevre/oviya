@@ -96,17 +96,14 @@ function oviya_assets() {
 		wp_enqueue_script( 'tocbot', OVIYA_URI . '/assets/js/tocbot/tocbot.min.js', array(), '4', true );
 	}
 
-	// ---- Lazy-load polyfill + GLightbox + clipboard.js on post/page/home ----
-	if ( in_array( $layout, array( 'post', 'page', 'home' ), true ) ) {
-		wp_enqueue_style( 'lazy-polyfill', OVIYA_URI . '/assets/css/lazy-polyfill/loading-attribute-polyfill.min.css', array( 'oviya-fontawesome' ), '2' );
-		wp_enqueue_script( 'lazy-polyfill', OVIYA_URI . '/assets/js/lazy-polyfill/loading-attribute-polyfill.umd.min.js', array(), '2', true );
-
-		if ( 'home' !== $layout ) {
-			wp_enqueue_style( 'glightbox', OVIYA_URI . '/assets/css/glightbox/glightbox.min.css', array( 'oviya-fontawesome' ), '3' );
-			wp_enqueue_script( 'glightbox', OVIYA_URI . '/assets/js/glightbox/glightbox.min.js', array(), '3', true );
-			wp_enqueue_script( 'clipboard', OVIYA_URI . '/assets/js/clipboard/clipboard.min.js', array(), '2', true );
-		}
-	}
+	// ---- GLightbox + clipboard.js on post/page/home ----
+    if ( in_array( $layout, array( 'post', 'page', 'home' ), true ) ) {
+        if ( 'home' !== $layout ) {
+            wp_enqueue_style( 'glightbox', OVIYA_URI . '/assets/css/glightbox/glightbox.min.css', array( 'oviya-fontawesome' ), '3' );
+            wp_enqueue_script( 'glightbox', OVIYA_URI . '/assets/js/glightbox/glightbox.min.js', array(), '3', true );
+            wp_enqueue_script( 'clipboard', OVIYA_URI . '/assets/js/clipboard/clipboard.min.js', array(), '2', true );
+        }
+    }
 
 	// ---- dayjs (relative/localized date formatting) ----
 	if ( in_array( $layout, array( 'home', 'post', 'archives', 'category', 'tag' ), true ) ) {
