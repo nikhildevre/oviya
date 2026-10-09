@@ -3,7 +3,7 @@ Contributors: Nikhil Devre
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.2
 License: MIT License
 License URI: https://github.com/nikhildevre/oviya/blob/main/LICENSE
 Tags: blog, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -30,7 +30,7 @@ Designed with simplicity and usability at its core, Oviya provides a refined fou
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.2 =
 * Initial public release of the Oviya WordPress theme.
 
 == Resources ==
