@@ -81,7 +81,7 @@
 		<?php endif; ?>
 
 		<?php foreach ( oviya_contact_links() as list( $type, $icon, $url ) ) : ?>
-			<a href="<?php echo esc_url( $url ); ?>" aria-label="<?php echo esc_attr( $type ); ?>"
+			<a href="<?php echo 'email' === $type ? $url : esc_url( $url ); ?>" aria-label="<?php echo esc_attr( $type ); ?>"
 				<?php if ( 'email' !== $type ) : ?>target="_blank" rel="noopener noreferrer<?php echo 'mastodon' === $type ? ' me' : ''; ?>"<?php endif; ?>>
 				<i class="<?php echo esc_attr( $icon ); ?>"></i>
 			</a>
