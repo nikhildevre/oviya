@@ -932,14 +932,21 @@ main.col-12 {
   cursor: zoom-in;
 }
 
-.content a:not(.img-link) {
-  border-bottom: 1px solid var(--link-underline-color);
+.content a:not(.img-link):not(.popup):not(.anchor),
+.entry-content a:not(.img-link):not(.popup):not(.anchor) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  border-bottom: none;
 }
 
-.content a:not(.img-link):hover {
+.content a:not(.img-link):not(.popup):not(.anchor):hover,
+.content a:not(.img-link):not(.popup):not(.anchor):focus,
+.entry-content a:not(.img-link):not(.popup):not(.anchor):hover,
+.entry-content a:not(.img-link):not(.popup):not(.anchor):focus {
   color: #d2603a !important;
-  border-bottom: 1px solid #d2603a;
-  text-decoration: none;
+  text-decoration: underline;
+  border-bottom: none;
 }
 
 .content ol:not([class]), .content ol.task-list, .content ul:not([class]), .content ul.task-list {
@@ -3787,12 +3794,4 @@ h2, h3, h4 {
   margin-bottom: -1px;
 }
 
-/* ===== accessibility ===== */
-.screen-reader-text { clip: rect(1px, 1px, 1px, 1px); position: absolute !important; height: 1px; width: 1px; overflow: hidden; }
-.wp-caption { margin-bottom: 1rem; }
-.wp-caption-text { font-size: 0.875rem; color: #6c757d; }
-.gallery-caption { font-size: 0.875rem; }
-.bypostauthor { font-weight: bold; }
-.alignright { float: right; }
-.alignleft { float: left; }
-.aligncenter { display: block; margin: 0 auto; }
+/* WordPress core classes and accessibility rules are maintained in style.css */

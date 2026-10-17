@@ -48,6 +48,6 @@ endif;
 	<?php endif; ?>
 </div>
 
-<?php if ( is_active_sidebar( 'panel-widgets' ) ) : ?>
-	<?php dynamic_sidebar( 'panel-widgets' ); ?>
+<?php if ( is_active_sidebar( 'oviya-panel-widgets' ) ) : ?>
+	<?php dynamic_sidebar( 'oviya-panel-widgets' ); ?>
 <?php endif; ?>

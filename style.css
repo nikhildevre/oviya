@@ -3,12 +3,12 @@ Theme Name: Oviya
 Theme URI: https://github.com/nikhildevre/oviya
 Author: Nikhil Devre (Apur Group)
 Author URI: https://www.apurgroup.com
-Description: <p>A thoughtfully designed WordPress theme built for writers, developers, and independent creators who value clarity, performance, and a focused reading experience. It combines a clean, responsive design with essential tools for modern technical blogging, including light and dark modes, syntax-highlighted code blocks, table-of-contents navigation, related posts, hierarchical category browsing, and an integrated search sidebar.</p><br /><br /><p>Designed with simplicity and usability at its core, the theme provides a refined foundation for publishing technical articles, tutorials, documentation, and personal knowledge.</p>
+Description: A thoughtfully designed WordPress theme built for writers, developers, and independent creators who value clarity, performance, and a focused reading experience. It combines a clean, responsive design with essential tools for modern technical blogging, including light and dark modes, syntax-highlighted code blocks, table-of-contents navigation, related posts, hierarchical category browsing, and an integrated search sidebar. Designed with simplicity and usability at its core, the theme provides a refined foundation for publishing technical articles, tutorials, documentation, and personal knowledge.
 Copyright: (c) 2026 Apur Group
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Version: 1.1.0
+Version: 1.1.1
 License: MIT License
 License URI: https://github.com/nikhildevre/oviya/blob/main/LICENSE
 Text Domain: oviya
@@ -21,6 +21,137 @@ This program is free software; you can redistribute it and/or modify it under th
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 Inspired by and design concepts adapted from the Chirpy Jekyll theme by Cotes Chung (https://github.com/cotes2020/jekyll-theme-chirpy).
-
-All theme styles live in assets/css/oviya.css and are enqueued via functions.php; this file only carries the required theme header metadata.
 */
+
+/* ==========================================================================
+   Accessibility & Skip Links
+   ========================================================================== */
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus,
+.skip-link:focus {
+	background-color: #f8f9fa !important;
+	border: 2px solid #212529 !important;
+	border-radius: 4px !important;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) !important;
+	clip: auto !important;
+	clip-path: none !important;
+	color: #212529 !important;
+	display: block !important;
+	font-size: 0.875rem !important;
+	font-weight: 700 !important;
+	height: auto !important;
+	left: 10px !important;
+	line-height: normal !important;
+	margin: 0 !important;
+	overflow: visible !important;
+	padding: 12px 20px !important;
+	position: fixed !important;
+	text-decoration: none !important;
+	top: 10px !important;
+	width: auto !important;
+	z-index: 1000000 !important;
+}
+
+body.admin-bar .screen-reader-text:focus,
+body.admin-bar .skip-link:focus {
+	top: 42px !important;
+}
+
+/* ==========================================================================
+   Link Underlines for Content and Comments
+   ========================================================================== */
+
+.content a:not(.img-link):not(.popup):not(.anchor),
+.entry-content a:not(.img-link):not(.popup):not(.anchor),
+.comments-area a,
+.comment-content a,
+.comment-author a,
+.comment-metadata a {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+	border-bottom: none;
+}
+
+.content a:not(.img-link):not(.popup):not(.anchor):hover,
+.content a:not(.img-link):not(.popup):not(.anchor):focus,
+.entry-content a:not(.img-link):not(.popup):not(.anchor):hover,
+.entry-content a:not(.img-link):not(.popup):not(.anchor):focus,
+.comments-area a:hover,
+.comments-area a:focus,
+.comment-content a:hover,
+.comment-content a:focus,
+.comment-author a:hover,
+.comment-author a:focus,
+.comment-metadata a:hover,
+.comment-metadata a:focus {
+	color: #d2603a !important;
+	text-decoration: underline;
+	border-bottom: none;
+}
+
+.comment-author a img.avatar {
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.comments-area .btn,
+.comments-area .btn:hover,
+.comments-area .btn:focus {
+	text-decoration: none;
+}
+
+/* ==========================================================================
+   WordPress Core Classes & Alignments
+   ========================================================================== */
+
+.alignright {
+	float: right;
+	margin-left: 1.5em;
+	margin-bottom: 1em;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 1.5em;
+	margin-bottom: 1em;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+}
+
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption-text,
+.gallery-caption {
+	font-size: 0.875rem;
+	color: #6c757d;
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+.bypostauthor {
+	display: block;
+	font-weight: 700;
+}
