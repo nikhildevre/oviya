@@ -40,7 +40,7 @@ function oviya_setup() {
 	// alongside Disqus.
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'editor-styles' );
-	add_editor_style( 'assets/css/oviya.css' );
+	add_editor_style( array( 'assets/css/oviya.css', 'style.css' ) );
 	add_theme_support( 'responsive-embeds' );
 
 	// Add support for wide and full-width alignment in the block editor.
@@ -69,7 +69,7 @@ function oviya_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => __( 'Panel (below Trending Tags)', 'oviya' ),
-			'id'            => 'panel-widgets',
+			'id'            => 'oviya-panel-widgets',
 			'description'   => __( 'Extra widgets shown in the right-hand panel, below the recently-updated and trending-tags lists.', 'oviya' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',

@@ -72,7 +72,10 @@ function oviya_assets() {
 	// ---- Theme stylesheet (compiled from Oviya's SCSS) ----
 	// Declared as depending on 'bootstrap' so WordPress guarantees it is
 	// printed after Bootstrap's CSS even if enqueue order is ever changed.
-	wp_enqueue_style( 'oviya-style', OVIYA_URI . '/assets/css/oviya.css', array( 'bootstrap' ), OVIYA_VERSION );
+	wp_enqueue_style( 'oviya-main', OVIYA_URI . '/assets/css/oviya.css', array( 'bootstrap' ), OVIYA_VERSION );
+
+	// ---- Primary stylesheet (style.css) loaded via get_stylesheet_uri() ----
+	wp_enqueue_style( 'oviya-style', get_stylesheet_uri(), array( 'oviya-main' ), OVIYA_VERSION );
 
 	// ---- Web fonts (Lato + Source Sans Pro, same families as upstream) ----
 	wp_enqueue_style(

@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function oviya_user_profile_fields( $user ) {
 	?>
 	<h2><?php esc_html_e( 'Oviya Author Info', 'oviya' ); ?></h2>
+	<?php wp_nonce_field( 'oviya_save_user_profile_fields', 'oviya_user_profile_nonce' ); ?>
 	<table class="form-table">
 		<tr>
 			<th><label for="oviya_twitter"><?php esc_html_e( 'Twitter/X username', 'oviya' ); ?></label></th>
@@ -29,6 +30,9 @@ add_action( 'edit_user_profile', 'oviya_user_profile_fields' );
 
 function oviya_save_user_profile_fields( $user_id ) {
 	if ( ! current_user_can( 'edit_user', $user_id ) ) {
+		return false;
+	}
+	if ( ! isset( $_POST['oviya_user_profile_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['oviya_user_profile_nonce'] ) ), 'oviya_save_user_profile_fields' ) ) {
 		return false;
 	}
 	if ( isset( $_POST['oviya_twitter'] ) ) {
