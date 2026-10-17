@@ -15,7 +15,7 @@ $oviya_theme_mode = get_theme_mod( 'oviya_theme_mode', 'auto' );
     <meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo( 'charset' ); ?>">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
 
     <?php if ( is_singular() && get_the_excerpt() ) : ?>
         <meta name="description" content="<?php echo esc_attr( wp_strip_all_tags( get_the_excerpt() ) ); ?>">
@@ -39,4 +39,4 @@ $oviya_theme_mode = get_theme_mod( 'oviya_theme_mode', 'auto' );
         <?php get_template_part( 'template-parts/topbar' ); ?>
 
         <div class="row flex-grow-1">
-            <main id="primary" aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            <main id="primary" tabindex="-1" aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">

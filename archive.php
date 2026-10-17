@@ -11,8 +11,10 @@ get_header();
 	<h1 class="ps-lg-2"><?php echo wp_kses_post( get_the_archive_title() ); ?></h1>
 
 	<ul class="content ps-0">
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php
+		<?php
+		$current_year = null;
+		while ( have_posts() ) :
+			the_post();
 			$post_year = get_the_date( 'Y' );
 			if ( $post_year !== $current_year ) :
 				$current_year = $post_year;

@@ -3,7 +3,7 @@ Contributors: Nikhil Devre
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: MIT License
 License URI: https://github.com/nikhildevre/oviya/blob/main/LICENSE
 Tags: blog, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -30,28 +30,99 @@ Designed with simplicity and usability at its core, Oviya provides a refined fou
 
 == Changelog ==
 
-= 1.0.0 =
-* Initial public release of the Oviya WordPress theme.
-= 1.0.1 =
-* Documentation update: Added license details.
-= 1.0.2 =
-* Documentation update: Added theme details, metadata, and description
+= 1.1.1 =
+* Fixed skip-to-content focus visibility and accessibility styling.
+* Updated style.css primary enqueueing and cleaned header metadata.
+* Enqueued Disqus commenting script with proper privacy declaration.
+* Wrapped mailto URLs with esc_url() in sidebar.
+* Added nonce verification for author Twitter user meta.
+* Removed inline onerror handlers from custom logo.
+* Added proper text underlines for post content and comment links.
+* Enabled viewport zoom/scaling.
+* Fixed undefined variable warning on date archives.
+* Prefixed widget area ID with theme slug.
+* Documented third-party bundled resources and licenses.
+* Included localization POT template.
+
 = 1.1.0 =
 * New Feature: Integrated highlightjs to automatically syntax-highlight code blocks in posts and pages.
 
+= 1.0.2 =
+* Documentation update: Added theme details, metadata, and description
+
+= 1.0.1 =
+* Documentation update: Added license details.
+
+= 1.0.0 =
+* Initial public release of the Oviya WordPress theme.
+
+
 == Resources ==
 
-* Font Awesome (Free Version) - https://fontawesome.com
-  License: SIL OFL 1.1 (Fonts) / MIT (Code) - https://fontawesome.com/license/free
+* Bootstrap
+  Source: https://getbootstrap.com/
+  License: MIT License
+  License URI: https://github.com/twbs/bootstrap/blob/main/LICENSE
 
-* Bootstrap Framework - https://getbootstrap.com
-  License: MIT License - https://github.com/twbs/bootstrap/blob/main/LICENSE
+* Font Awesome Free (Icons & Fonts)
+  Source: https://fontawesome.com/
+  License: SIL OFL 1.1 (Fonts), CC BY 4.0 (Icons), MIT License (Code)
+  License URI: https://fontawesome.com/license/free
 
-* Theme Screenshot Images:
-  Self-created / Public Domain (CC0)
+* Highlight.js
+  Source: https://highlightjs.org/
+  License: BSD 3-Clause License
+  License URI: https://github.com/highlightjs/highlight.js/blob/main/LICENSE
+
+* Tocbot
+  Source: https://tscanlin.github.io/tocbot/
+  License: MIT License
+  License URI: https://github.com/tscanlin/tocbot/blob/master/LICENSE-MIT
+
+* GLightbox
+  Source: https://biati-digital.github.io/glightbox/
+  License: MIT License
+  License URI: https://github.com/biati-digital/glightbox/blob/master/LICENSE.md
+
+* clipboard.js
+  Source: https://clipboardjs.com/
+  License: MIT License
+  License URI: https://github.com/zenorocha/clipboard.js/blob/master/license
+
+* Day.js
+  Source: https://day.js.org/
+  License: MIT License
+  License URI: https://github.com/iamkun/dayjs/blob/master/LICENSE
+
+* Mermaid
+  Source: https://mermaid.js.org/
+  License: MIT License
+  License URI: https://github.com/mermaid-js/mermaid/blob/develop/LICENSE
+
+* MathJax
+  Source: https://www.mathjax.org/
+  License: Apache License 2.0
+  License URI: https://github.com/mathjax/MathJax/blob/master/LICENSE
+
+* Lato Font
+  Source: https://fonts.google.com/specimen/Lato
+  Author: Łukasz Dziedzic
+  License: SIL Open Font License, 1.1
+  License URI: http://scripts.sil.org/OFL
+
+* Source Sans 3 Font
+  Source: https://fonts.google.com/specimen/Source+Sans+3
+  Author: Frank Grießhammer / Adobe
+  License: SIL Open Font License, 1.1
+  License URI: http://scripts.sil.org/OFL
+
+* Screenshot Images
+  Source: Self-created by theme author
+  License: CC0 1.0 Universal (Public Domain)
+  License URI: https://creativecommons.org/publicdomain/zero/1.0/
 
 == Privacy Note ==
 
-This theme optionally embeds Disqus comments when configured by the site admin.
-Disqus is a third-party service that may collect IP addresses and usage data.
+This theme optionally provides an integration with Disqus comments when configured by the site administrator under Appearance > Customize > Comments.
+When Disqus is selected and enabled on single posts and pages, it loads external JavaScript from disqus.com. Disqus is a third-party service that may collect IP addresses, browser information, and cookies in accordance with their privacy policy.
 Disqus Privacy Policy: https://help.disqus.com/en/articles/1717103-disqus-privacy-policy
