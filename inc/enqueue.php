@@ -124,7 +124,7 @@ function oviya_assets() {
 
 	// ---- MathJax (per-post opt-in) ----
 	if ( oviya_math_enabled() ) {
-		wp_enqueue_script( 'mathjax', OVIYA_URI . '/assets/js/mathjax/tex-mml-chtml.js', array(), '4', true );
+		wp_enqueue_script( 'mathjax', OVIYA_URI . '/assets/js/mathjax/tex-mml-chtml.min.js', array(), '4', true );
 	}
 
 	// ---- Theme's own JS ----
