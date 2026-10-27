@@ -8,6 +8,9 @@ License: MIT License
 License URI: https://github.com/nikhildevre/oviya/blob/main/LICENSE
 Tags: blog, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
+Oviya WordPress Theme, Copyright 2026 Apur Group (Nikhil Devre)
+Oviya is distributed under the terms of the MIT License.
+
 == Description ==
 
 A thoughtfully designed WordPress theme built for writers, developers, and independent creators who value clarity, performance, and a focused reading experience. 
