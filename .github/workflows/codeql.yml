@@ -71,14 +71,12 @@ jobs:
         build-mode: ${{ matrix.build-mode }}
         config: |
           paths-ignore:
-            - 'assets/css/**'
             - 'assets/css/bootstrap/**'
             - 'assets/css/glightbox/**'
             - 'assets/css/tocbot/**'
             - 'assets/css/fontawesome-free/**'
             - 'assets/css/highlightjs/**'
             - 'assets/css/webfonts/**'
-            - 'assets/js/**'
             - 'assets/js/bootstrap/**'
             - 'assets/js/dayjs/**'
             - 'assets/js/highlightjs/**'
