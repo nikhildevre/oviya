@@ -69,6 +69,24 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
+        config: |
+          paths-ignore:
+            - 'assets/css/**'
+            - 'assets/css/bootstrap/**'
+            - 'assets/css/glightbox/**'
+            - 'assets/css/tocbot/**'
+            - 'assets/css/fontawesome-free/**'
+            - 'assets/css/highlightjs/**'
+            - 'assets/css/webfonts/**'
+            - 'assets/js/**'
+            - 'assets/js/bootstrap/**'
+            - 'assets/js/dayjs/**'
+            - 'assets/js/highlightjs/**'
+            - 'assets/js/mermaid/**'
+            - 'assets/js/clipboard/**'
+            - 'assets/js/glightbox/**'
+            - 'assets/js/mathjax/**'
+            - 'assets/js/tocbot/**'
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
         # Prefix the list here with "+" to use these queries and those in the config file.
