@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/images/logo.png" alt="Oviya Logo"  />
+</p>
+
 # Oviya - A fast, distraction-free WordPress theme for developers and technical writers.
 
 > A thoughtfully designed, high performance WordPress theme built for writers, developers, and independent creators who value a focused reading experience. It puts the reading experience first: clean typography, excellent code blocks, dark mode, useful navigation, and a distraction free layout, without the bloat of a typical multipurpose theme.
